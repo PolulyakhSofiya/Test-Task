@@ -1,0 +1,21 @@
+﻿@model IEnumerable<HotlineParcer.Data.Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+  @foreach(var product in this.Model)
+  {
+    <p>@product.Name</p>
+    <img width="120px" src="@product.ImageUrl" />
+    <hr />
+  }
+</body>
+</html>
